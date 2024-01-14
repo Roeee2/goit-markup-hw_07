@@ -2,236 +2,6 @@
 @use "./../utils/mixins" as *;
 @use "./../utils/globals" as *;
 
-@mixin logo {
-  font-family: $logo-font;
-}
-
-.header-border {
-  display: flex;
-  margin: 0 0 0 0;
-  border: solid 10px $header-border;
-  border-width: 0 0 1px 0;
-  height: 80px;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 480px;
-  width: 100%;
-  height: 70px;
-  border: solid 1px red;
-
-  @include tablet {
-    max-width: 768px;
-    height: 72px;
-  }
-
-  @include desktop {
-    max-width: 1600px;
-    height: 72px;
-  }
-  nav {
-    display: none;
-
-    @include tablet {
-      display: flex;
-      margin-right: auto;
-    }
-
-    @include desktop {
-      display: flex;
-      padding: 0 0 0 93px;
-      margin-right: auto;
-    }
-  }
-  &__logo-web {
-    color: $web-studio-blue;
-    padding-left: 16px;
-
-    @include desktop {
-      padding-left: 156px;
-    }
-  }
-
-  &__logo-studio {
-    color: $black;
-  }
-
-  &__mobile-burger {
-    display: block;
-    border: solid 2px blue;
-
-    @include tablet {
-      display: none;
-    }
-
-    @include desktop {
-      display: none;
-    }
-  }
-  &__burger-icon {
-    fill: $black;
-    transition-property: fill;
-    transition: $standard;
-    background-color: transparent;
-    border: 0;
-
-    &:hover,
-    &:focus {
-      fill: $web-studio-blue;
-      transition-property: fill;
-      transition: $standard;
-    }
-  }
-
-  &__nav-spacing {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-  }
-
-  h2 {
-    @include logo;
-    border: solid 3px green;
-  }
-
-  h3 {
-    margin-left: 83px;
-  }
-
-  ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    position: relative;
-  }
-
-  &__nav-item {
-    justify-content: center;
-    color: $black;
-    transition-property: color;
-    transition: $standard;
-  }
-
-  &__nav-item:hover,
-  &__nav-item:focus {
-    color: $web-studio-blue;
-    transition-property: color;
-    transition: $standard;
-  }
-
-  &__nav-item-active {
-    color: $web-studio-blue;
-    transition-property: color;
-    transition: $standard;
-  }
-
-  &__nav-item::after {
-    content: "";
-    justify-content: center;
-    height: 4px;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    border-radius: 2px;
-    transform: translateY(32px);
-    transition-property: background-color;
-    transition: $standard;
-  }
-
-  &__nav-item-active::after {
-    content: "";
-    justify-content: center;
-    height: 4px;
-    width: 100%;
-    background-color: $web-studio-blue;
-    display: flex;
-    border-radius: 2px;
-    transform: translateY(32px);
-    transition-property: background-color;
-    transition: $standard;
-  }
-
-  &__nav-item:hover::after,
-  &__nav-item:focus::after {
-    content: "";
-    justify-content: center;
-    height: 4px;
-    width: 100%;
-    background-color: $web-studio-blue;
-    display: flex;
-    border-radius: 2px;
-    transform: translateY(32px);
-    transition-property: background-color;
-    transition: $standard;
-  }
-
-  &__contact-spacing {
-    display: none;
-    padding: 5px 15px 5px 0;
-
-    @include tablet {
-      padding: 21px 15px 21px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      justify-content: flex-end;
-    }
-
-    @include desktop {
-      padding: 30px 227px 30px 0;
-      display: flex;
-      flex-direction: row;
-      align-content: right;
-      gap: 30px;
-    }
-
-    &--box {
-      align-items: center;
-      background-color: red;
-    }
-
-    svg {
-      vertical-align: middle;
-      fill: $text-color;
-      transition-property: fill;
-      transition: $standard;
-    }
-
-    a {
-      color: $text-color;
-      transition-property: color;
-      transition: $standard;
-    }
-
-    a:hover svg,
-    a:focus svg {
-      fill: $web-studio-blue;
-      transition-property: fill;
-      transition: $standard;
-    }
-
-    a:hover,
-    a:focus {
-      color: $web-studio-blue;
-      transition-property: color;
-      transition: $standard;
-    }
-
-    div {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-}
-
 .border {
   box-shadow: $hdsd1, $hdsd2, $hdsd3;
 }
@@ -253,13 +23,15 @@
   &__logo {
     display: flex;
     align-items: center;
-    padding: 0 16px 0 16px;
-
-    @include desktop {
-      padding-left: 156px;
-    }
+    padding: 0 16px;
 
     @include logo;
+
+    @include desktop {
+      padding: 0 156px;
+    }
+
+
 
     &--web {
       color: $iris;
@@ -292,6 +64,14 @@
 
     &--icon {
       display: block;
+      fill: $navy;
+      transition-property: fill;
+    transition: $standard;
+    }
+
+    &--icon:hover,
+    &--icon:focus {
+      fill: $iris;
     }
   }
 }
