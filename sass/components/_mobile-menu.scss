@@ -17,7 +17,7 @@
   transition: transform $standard;
   z-index: 999;
   inset: 0;
-  font-weight: 500;
+  font-weight: 700;
 
   &__burger {
     position: absolute;
@@ -25,13 +25,11 @@
     right: 8px;
     background-color: transparent;
     border: none;
-    fill: $header-color;
+    fill: $navy;
+    --color1: var(--navy);
 
-    &:hover,
-    &:focus {
-      fill: $web-studio-blue;
     }
-  }
+  
 
   &__nav {
     color: $header-color;
@@ -46,9 +44,8 @@
 
     &:hover,
     &link:focus {
-      color: $web-studio-blue;
-      transition-property: color;
-      transition: $standard;
+    color: $web-studio-blue;
+
     }
   }
 
@@ -79,4 +76,19 @@
       color: $form-border;
     }
   }
+
 }
+
+.menu-container__ellipse {
+  display: block;
+}
+
+.menu-container__ellipse:hover,
+.menu-container__ellipse:focus,
+.menu-container__close:hover,
+.menu-container__close:focus,
+.menu-container__close:hover + .menu-container__ellipse:hover,
+.menu-container__close:focus + .menu-container__ellipse:focus {
+  display: none;
+}
+
