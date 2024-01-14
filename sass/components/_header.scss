@@ -1,5 +1,6 @@
 @use "./../utils/vars" as *;
 @use "./../utils/mixins" as *;
+@use "./../utils/globals" as *;
 
 @mixin logo {
   font-family: $logo-font;
@@ -60,6 +61,7 @@
 
   &__mobile-burger {
     display: block;
+    border: solid 2px blue;
 
     @include tablet {
       display: none;
@@ -228,4 +230,72 @@
       flex-direction: row;
     }
   }
+}
+
+.border {
+  box-shadow: $hdsd1, $hdsd2, $hdsd3;
+}
+
+.head {
+  background: var(--white);
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 70px;
+
+  @include tablet {
+    height: 72px;
+  }
+
+  @include desktop {
+    height: 72px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding: 0 16px 0 16px;
+
+    @include desktop {
+      padding-left: 156px;
+    }
+
+    @include logo;
+
+    &--web {
+      color: $iris;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 22px;
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    }
+
+    &--menu {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      width: 32px;
+      height: 22px;
+      display: flex;
+    }
+
+    &--icon {
+      display: block;
+    }
+  }
+}
+
+.container h2 {
+  margin: 0;
 }
