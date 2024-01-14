@@ -1,0 +1,41 @@
+@use "./../utils/vars" as *;
+.customers-icons {
+  // display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 94px;
+  padding-top: 20px;
+  list-style-type: none;
+
+  display: none;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: solid 1px $web-studio-grey;
+    border-radius: 4px;
+    transition-property: border-color, fill, color;
+    transition: $standard;
+    fill: $web-studio-grey;
+  }
+
+  li:hover,
+  li:focus {
+    border-color: $web-studio-blue;
+    fill: $web-studio-blue;
+    transition-property: border-color, fill, color;
+    transition: $standard;
+  }
+}

@@ -1,0 +1,193 @@
+@use "./../utils/vars" as *;
+@use "./../utils/mixins" as *;
+.footer-bg {
+  background-color: $h1-background;
+}
+.footer-container {
+  max-width: 480px;
+  margin-inline: auto;
+  //display: flex;
+  flex-direction: row;
+
+  display: none;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1600px;
+  }
+
+  &__logo {
+    padding: 60px 0 0 0;
+
+    &--logo-web {
+      color: $web-studio-blue;
+      padding-left: 215px;
+    }
+
+    &--logo-studio {
+      color: $white;
+    }
+  }
+
+  &__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    color: $white;
+    padding-left: 215px;
+    padding-bottom: 60px;
+    letter-spacing: 0.03em;
+
+    &--ways-of-contact {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      color: $white6alpha;
+      transition-property: color;
+      transition-duration: $standard;
+    }
+
+    address {
+      margin-bottom: 9px;
+      color: $white;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 0 0 70px;
+    align-items: flex-start;
+    text-transform: uppercase;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $white;
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.42px;
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      --color1: $white;
+    }
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      height: 44px;
+      width: 44px;
+      background-color: $footer-socials-bg;
+      border-radius: 50%;
+      transition-property: background-color, fill;
+      transition: $standard;
+    }
+
+    li:hover,
+    li:focus {
+      background-color: $web-studio-blue;
+      fill: $white;
+      transition-property: background-color, fill;
+      transition: $standard;
+    }
+  }
+
+  &__newsletter {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 72px 0 0 78px;
+    margin: 0;
+    align-items: flex-start;
+    text-transform: uppercase;
+    --color1: $white;
+
+    &--newsletter-box {
+      background-color: $h1-background;
+      border-radius: 4px;
+      box-sizing: border-box;
+      border: 1px solid $sub-button-border;
+      box-shadow: 0px 4px 4px 0px $light-shadow;
+      width: 358px;
+      height: 50px;
+      flex-shrink: 0;
+      padding: 0 0 0 16px;
+      margin-right: 12px;
+    }
+
+    &--subscribe {
+      border: 1px solid $sub-button-border;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background: $web-studio-blue;
+      box-shadow: $modal-shadow2;
+      width: 200px;
+      height: 50px;
+      flex-shrink: 0;
+      color: $white;
+      font-size: 16px;
+      line-height: 1.875;
+      letter-spacing: 0.96px;
+      position: relative;
+      text-align: start;
+      padding-left: 42px;
+      transition-property: color, box-shadow, text-shadow;
+      transition: $standard;
+    }
+    &--subscribe:hover,
+    &--subscribe:focus {
+      transition-property: color, box-shadow, text-shadow;
+      transition: $standard;
+      text-shadow: 1px 1px 1px $black;
+      box-shadow: inset -5px -5px 10px $modal-shadow;
+      box-shadow: inset 5px 5px 10px $box-shadow;
+    }
+    &--send-icon {
+      position: absolute;
+      top: 13px;
+      right: 28px;
+      left: 148px;
+      fill: $white;
+    }
+    h2 {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.42px;
+      color: $white;
+      margin-bottom: 20px;
+    }
+  }
+}

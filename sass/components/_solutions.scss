@@ -1,0 +1,108 @@
+@use "./../utils/vars" as *;
+@use "./../utils/mixins" as *;
+.solutions {
+  color: $white;
+  background-image: $solutions-bg;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  max-width: 480px;
+
+  display: none;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1600px;
+  }
+
+  &__content {
+    text-align: center;
+
+    &--title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.363;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--order {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.625;
+      color: $white;
+      background: $web-studio-blue;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 41px 10px 42px;
+      box-shadow: 0px 4px 4px 0px $box-shadow;
+      border: 1px solid $black;
+      border-radius: 4px;
+      transition-property: color, box-shadow, text-shadow;
+      transition: $standard;
+    }
+
+    &--order:hover,
+    &--order:focus {
+      color: $white;
+      transition-property: color, box-shadow, text-shadow;
+      transition: $standard;
+      box-shadow: inset -5px -5px 10px $modal-shadow;
+      text-shadow: 1px 1px 1px $black;
+      box-shadow: inset 5px 5px 10px $box-shadow;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+
+    span:first-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+.solutions-examples {
+  //display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  background: $white;
+  padding-top: 94px;
+
+  display: none;
+
+  &__example-container {
+    width: 270px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    text-align: center;
+    background: $button-grey;
+    --color1: $black;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    color: $text-color;
+  }
+}

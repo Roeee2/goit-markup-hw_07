@@ -1,0 +1,37 @@
+$background-color: #e5e5e5;
+$header-color: #212121;
+$text-color: #757575;
+$h1-background: #2f303a;
+$web-studio-blue: #2196f3;
+$tile: rgba(33, 150, 243, 0.9);
+$black: #000000;
+$white: #ffffff;
+$white6alpha: #ffffff99;
+$button-grey: #f5f4fa;
+$border: #eeeeee;
+$header-border: #ececec;
+$web-studio-grey: #afb1b8;
+$footer-socials-bg: rgba(255, 255, 255, 0.1);
+$gal-shadow2: rgba(0, 0, 0, 0.06);
+$shadow: rgba(0, 0, 0, 0.1);
+$modal-shadow3: rgba(0, 0, 0, 0.12);
+$modal-shadow2: rgba(0, 0, 0, 0.14);
+$light-shadow: rgba(0, 0, 0, 0.15);
+$gal-shadow1: rgba(0, 0, 0, 0.16);
+$modal-shadow: rgba(0, 0, 0, 0.2);
+$bg-shadow: rgba(0, 0, 0, 0.4);
+$box-shadow: rgba(0, 0, 0, 0.5);
+$description-bar: rgba(47, 48, 58, 0.8);
+$sub-button-border: rgba(255, 255, 255, 0.3);
+$form-border: #21212133;
+
+$standard: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$main-font: "Roboto", sans-serif;
+$logo-font: "Raleway", sans-serif;
+
+$solutions-bg: linear-gradient($shadow, $bg-shadow),
+  url(./../images/header_background.jpg);
+
+$team-figure: 0px 1px 3px $modal-shadow3, 0px 1px 1px $modal-shadow2,
+  0px 2px 1px $modal-shadow;
