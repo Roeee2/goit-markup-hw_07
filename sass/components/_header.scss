@@ -25,7 +25,7 @@
     align-items: center;
     padding: 0 16px;
 
-    @include logo;
+    @include logo-font;
 
     @include desktop {
       padding: 0 156px;

@@ -1,11 +1,11 @@
 @use "./vars" as *;
 
-@mixin logo {
+@mixin logo-font {
   font-family: $logo-font;
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 1.16;
+  line-height: 1.16;
+  letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
