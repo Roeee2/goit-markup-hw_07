@@ -4,6 +4,8 @@
 
 .border {
   box-shadow: $hdsd1, $hdsd2, $hdsd3;
+
+  border: solid 2px pink;
 }
 
 .head {
@@ -11,6 +13,8 @@
   box-sizing: border-box;
   justify-content: space-between;
   height: 70px;
+  display: flex;
+  border: solid 2px green;
 
   @include tablet {
     height: 72px;
@@ -24,6 +28,8 @@
     display: flex;
     align-items: center;
     padding: 0 16px;
+
+    border: solid 2px blue;
 
     @include logo-font;
 
@@ -43,6 +49,8 @@
     align-items: center;
     width: 32px;
     height: 22px;
+
+    border: solid 3px red;
 
     @include tablet {
       display: none;

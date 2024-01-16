@@ -34,7 +34,7 @@ ul {
 .container {
   max-width: 480px;
   height: 100vh;
-  margin: 0 auto;
+  width: 100vw;
 
   @include tablet {
     max-width: 768px;
