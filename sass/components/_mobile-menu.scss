@@ -17,7 +17,7 @@
   transition: transform $standard;
   z-index: 999;
   inset: 0;
-  height: 100vh;
+
 
   &__burger {
     position: absolute;
@@ -27,8 +27,10 @@
     border: none;
     fill: $navy;
     --color1: var(--navy);
+
   }
   
+
   &__nav {
     color: $navy;
     padding: 56px 0 0 0;
@@ -42,6 +44,7 @@
     transition-property: color;
     transition: $standard;
 
+
     &:hover,
     &link:focus {
     color: $ocean;
@@ -51,13 +54,14 @@
 
   li {
     margin: 0 0 40px;
-    }
+  }
   }
 
   &__contact {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
   }
 
   &__phone {
@@ -80,35 +84,26 @@
   }
 
   &__socials {
-    display: flex;
-    flex-direction: row;
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: $web-studio-blue;
 
-    &--circle {
-      fill: $iris;
-    }
-
-    &--icon {
-      fill: $cloud;
-    }
-
-    li {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      margin-right: 56px;
-    }
-    
-    svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &--divider {
+      color: $form-border;
     }
   }
+
 }
+
+.menu-container__ellipse {
+  display: block;
+}
+
+
 
 .menu-container__ellipse:hover,
 .menu-container__ellipse:focus,
