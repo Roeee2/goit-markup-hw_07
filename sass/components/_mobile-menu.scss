@@ -17,6 +17,7 @@
   transition: transform $standard;
   z-index: 999;
   inset: 0;
+  height: 100vh;
 
 
   &__burger {
@@ -90,17 +91,27 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    color: $web-studio-blue;
 
-    &--divider {
-      color: $form-border;
+    &--circle {
+      fill: $iris;
+      z-index: 1;
+    }
+
+    &--icon {
+      position: absolute;
+      fill: $cloud;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    li {
+      position: relative; 
+      height: 40px;
+      width: 40px;
     }
   }
-
-}
-
-.menu-container__ellipse {
-  display: block;
 }
 
 
