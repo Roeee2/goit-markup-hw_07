@@ -19,7 +19,6 @@
   inset: 0;
   height: 100vh;
 
-
   &__burger {
     position: absolute;
     top: 24px;
@@ -44,7 +43,6 @@
   &--link {
     transition-property: color;
     transition: $standard;
-
 
     &:hover,
     &link:focus {
@@ -90,7 +88,11 @@
     margin: 0;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 56px;
+
+    @media screen and (max-width: 400px) {
+      gap: 20px;
+    }
 
     &--circle {
       fill: $iris;
@@ -113,3 +115,13 @@
     }
   }
 }
+
+.menu-container__ellipse:hover,
+.menu-container__ellipse:focus,
+.menu-container__close:hover,
+.menu-container__close:focus,
+.menu-container__close:hover + .menu-container__ellipse:hover,
+.menu-container__close:focus + .menu-container__ellipse:focus {
+  display: none;
+}
+
