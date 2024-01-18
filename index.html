@@ -640,16 +640,17 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" data-modal-close>
-          <svg width="22px" height="22px">
-            <use href="./images/icons.svg#icon-close"></use>
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-ellipse2"></use>
+            <use href="./images/icons.svg#icon-mobile-close"></use>
           </svg>
         </button>
 
         <div class="contact">
-          <h2>Zostaw swoje dane w formularzu poniżej</h2>
+          <h2>Leave your contacts and we will call you back</h2>
           <form name="contact-form" autocomplete="on" novalidate>
             <label>
-              <h3 class="contact__label-header">Imię</h3>
+              <h3 class="contact__label-header">Name</h3>
               <div class="contact__field">
                 <input
                   type="text"
@@ -661,7 +662,7 @@
               </div>
             </label>
             <label>
-              <h3 class="contact__label-header">Telefon</h3>
+              <h3 class="contact__label-header">Phone</h3>
               <div class="contact__field">
                 <input
                   type="text"
@@ -685,13 +686,13 @@
               </div>
             </label>
             <label>
-              <h3 class="contact__label-header">Komentarz</h3>
+              <h3 class="contact__label-header">Comment</h3>
               <div class="contact__field">
                 <textarea
                   class="contact__comment"
                   name="comment"
                   rows="5"
-                  placeholder="Wprowadź tekst"></textarea>
+                  placeholder="Text input"></textarea>
               </div>
             </label>
 
@@ -714,11 +715,8 @@
                     <use href="./images/icons.svg#icon-checkbox-blue"></use>
                   </svg>
                 </div>
-                Oświadczam iż akceptuję
-                <a class="contact__declaration-link" href="#">Regulamin</a> i
-                <a class="contact__declaration-link" href="#"
-                  >Politykę Prywatności.</a
-                >
+                I accept the terms and conditions of the 
+                <a class="contact__declaration-link" href="#">Privacy Policy</a>
               </label>
             </div>
 
