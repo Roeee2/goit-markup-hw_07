@@ -3,23 +3,21 @@
 .solutions {
   color: $white;
 
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ),
-  url("../images/header_background.jpg");
-  background-color: $sol-bg;
+  background-image: $solutions-bg;
+
+  
 
   background-size: cover;
   background-position: center;
   height: 432px;
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-inline: auto;
   margin: 0;
-
+  padding: 0;
   box-sizing: border-box;
 
 

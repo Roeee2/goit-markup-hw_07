@@ -17,9 +17,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--web-studio-blue);
-  transition-property: color;
-  transition: $standard;
+  color: var(--$iris);
 }
 
 button {

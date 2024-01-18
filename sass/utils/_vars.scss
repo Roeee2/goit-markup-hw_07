@@ -30,8 +30,7 @@ $standard: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 $main-font: "Roboto", sans-serif;
 $logo-font: "Raleway", sans-serif;
 
-$solutions-bg: linear-gradient($shadow, $bg-shadow),
-  url(./../images/header_background.jpg);
+
 
 $team-figure: 0px 1px 3px $modal-shadow3, 0px 1px 1px $modal-shadow2,
   0px 2px 1px $modal-shadow;
@@ -46,6 +45,8 @@ $iris: #4d5ae5;
 $cloud: #f4f4fd;
 $ocean: #404BBF;
 $slate: #434455;
-
-$sol-bg: #2e2f42b3;
+$solutions-bg: linear-gradient(
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+url("../images/header_background.jpg");
 

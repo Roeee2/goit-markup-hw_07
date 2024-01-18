@@ -25,13 +25,13 @@
     align-items: center;
     padding: 0 16px;
 
-    @include logo-font;
-
     @include desktop {
       padding: 0 156px;
     }
 
-
+    &--whole {
+      @include logo-font;
+    }
 
     &--web {
       color: $iris;
@@ -76,7 +76,4 @@
   }
 }
 
-.container h2 {
-  margin: 0;
-}
 
