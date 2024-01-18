@@ -36,6 +36,9 @@ ul {
   height: 100vh;
   margin: 0 auto;
 
+
+  border: solid 1px red;
+  
   @include tablet {
     max-width: 768px;
   }
