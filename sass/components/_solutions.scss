@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   height: 432px;
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -42,6 +42,10 @@
       letter-spacing: 0.72px;
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 320px) {
+        font-size: 22px;
+      }
     }
 
     &--order {
