@@ -53,7 +53,7 @@
             type="button"
             class="solutions__content--order"
             data-modal-open>
-            <div class="solutions__content--label">Order Service</div>
+            <span class="solutions__content--label">Order Service</span>
           </button>
         </div>
       </section>
@@ -659,8 +659,9 @@
         <div class="contact">
           <h2>Leave your contacts and we will call you back</h2>
           <form name="contact-form" autocomplete="on" novalidate>
-            <label>
-              <h3 class="contact__label-header">Name</h3>
+            <label class="contact__field-header">
+              Name
+            </label>
               <div class="contact__field">
                 <input
                   type="text"
@@ -670,9 +671,10 @@
                   <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
               </div>
+
+            <label class="contact__field-header">
+              Phone
             </label>
-            <label>
-              <h3 class="contact__label-header">Phone</h3>
               <div class="contact__field">
                 <input
                   type="text"
@@ -682,9 +684,9 @@
                   <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
               </div>
+            <label class="contact__field-header">
+              Email
             </label>
-            <label>
-              <h3 class="contact__label-header">Email</h3>
               <div class="contact__field">
                 <input
                   type="email"
@@ -694,9 +696,9 @@
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
               </div>
+            <label class="contact__field-header">
+              Comment
             </label>
-            <label>
-              <h3 class="contact__label-header">Comment</h3>
               <div class="contact__field">
                 <textarea
                   class="contact__comment"
@@ -704,27 +706,25 @@
                   rows="5"
                   placeholder="Text input"></textarea>
               </div>
-            </label>
-
             <div class="contact__checkbox-container">
               <input type="checkbox" id="checkbox1" name="contact-checkbox">
               <label for="checkbox1" class="contact__declaration-label">
-                <div class="contact__empty-box">
+                <span class="contact__empty-box">
                   <svg
                     width="16px"
                     height="15px"
                     class="contact__checkbox-container--empty">
                     <use href="./images/icons.svg#icon-checkbox"></use>
                   </svg>
-                </div>
-                <div class="contact__box-checked">
+                </span>
+                <span class="contact__box-checked">
                   <svg
                     width="16px"
                     height="15px"
                     class="contact__checkbox-container--checked">
                     <use href="./images/icons.svg#icon-checkbox-blue"></use>
                   </svg>
-                </div>
+                </span>
                 I accept the terms and conditions of the 
                 <a class="contact__declaration-link" href="#">Privacy Policy</a>
               </label>

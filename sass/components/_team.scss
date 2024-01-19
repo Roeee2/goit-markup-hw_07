@@ -1,4 +1,6 @@
 @use "./../utils/vars" as *;
+@use "./../utils/mixins" as *;
+
 .team-header {
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +35,8 @@
     margin: 0;
     box-shadow: $team-figure;
     border-radius: 0px 0px 4px 4px;
+
+    
   }
 
   &__member-header,

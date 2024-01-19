@@ -1,4 +1,5 @@
 @use "./../utils/vars" as *;
+@use "./../utils/mixins" as *;
 
 .customers-icons {
   display: flex;
@@ -7,23 +8,31 @@
   padding: 0;
 
   &__list {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 30px;
+    flex-wrap: wrap;
     align-items: center;
-
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 96px 0;
+    gap: 16px;
+    
   &--item {
     display: flex;
+    flex-basis: calc((100% - 120px) / 2);
     justify-content: center;
     align-items: center;
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
     border: solid 1px $light-slate;
     border-radius: 4px;
     transition-property: border-color;
     transition: $standard;
+
+    @include tablet {
+      flex-basis: calc((100% - 120px) / 3);
+      width: calc((100% - 120px) / 6);
+    }
+
   }
 
   &--item:hover,
