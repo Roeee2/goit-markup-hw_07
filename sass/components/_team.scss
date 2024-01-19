@@ -25,9 +25,8 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  gap: 30px;
-  background: $button-grey;
-  padding: 0px 0 72px 0;
+  gap: 72px;
+  background: $cloud;
 
   figure {
     margin: 0;
@@ -74,21 +73,7 @@
         align-items: center;
         height: 44px;
         width: 44px;
-        border-radius: 50%;
         position: relative;
-        fill: $web-studio-grey;
-        color: $web-studio-grey;
-        --color1: $web-studio-grey;
-        transition-property: fill, color, background-color;
-        transition: $standard;
-      }
-
-      &--icon-container:hover,
-      &--icon-container:focus {
-        background-color: $web-studio-blue;
-        fill: $white;
-        transition-property: fill, background-color;
-        transition: $standard;
       }
 
       &--icon-container a {
@@ -101,11 +86,20 @@
         transform: translate(-50%, -50%);
       }
 
+      &--circle {
+        fill: $iris;
+        z-index: 1;
+      }
+  
       &--icon {
-        fill: $web-studio-grey;
-        transition-property: fill;
-        transition: $standard;
+        position: absolute;
+        fill: $cloud;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
       }
     }
   }
-}
+
