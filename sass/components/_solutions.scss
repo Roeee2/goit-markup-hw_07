@@ -1,5 +1,6 @@
 @use "./../utils/vars" as *;
 @use "./../utils/mixins" as *;
+
 .solutions {
   color: $white;
   background-image: $solutions-bg;
@@ -78,6 +79,14 @@
     span:first-child {
       margin-bottom: 6px;
     }
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .solutions {
+    background-image: $solutions-bg_2x;
   }
 }
 

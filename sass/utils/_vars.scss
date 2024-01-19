@@ -48,5 +48,9 @@ $slate: #434455;
 $solutions-bg: linear-gradient(
   rgba(46, 47, 66, 0.7),
   rgba(46, 47, 66, 0.7)),
-url("../images/header_background.jpg");
+url("../images/header_bg_mobile.jpg");
+$solutions-bg_2x: linear-gradient(
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+url("../images/header_bg_mobile_2x.jpg");
 
