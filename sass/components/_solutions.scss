@@ -16,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
 
-
   @include tablet {
     max-width: 768px;
     height: 436px;
@@ -87,8 +86,9 @@
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
-  background: $white;
-  padding-top: 96px;
+  background: $cloud;
+  padding: 96px 0;
+
 
   &__example-container {
     width: 396px;
