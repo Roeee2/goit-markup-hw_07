@@ -33,16 +33,17 @@
 
 
   figure {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 0;
     box-shadow: $team-figure;
     border-radius: 0px 0px 4px 4px;
+    border: solid 1px blueviolet;
   }
 
   &__member-header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
+    border: solid 1px red;
   }
 
   &__description {
