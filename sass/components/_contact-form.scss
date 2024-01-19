@@ -6,6 +6,8 @@
   height: 100%;
   padding: 72px 16px 24px 16px;
 
+  border: 2px rebeccapurple;
+
   h2 {
     font-size: 16px;
     letter-spacing: 0.32px;
@@ -38,7 +40,9 @@
 
   &__label-header {
     font-size: 12px;
-    letter-spacing: 0.12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
     color: $text-color;
     padding: 0;
     margin: 10px 0 4px 0;
@@ -94,7 +98,7 @@
     border: 1px solid $sub-button-border;
     border-radius: 4px;
     box-sizing: border-box;
-    background: $web-studio-blue;
+    background: $iris;
     box-shadow: $modal-shadow2;
     width: 169px;
     height: 56px;
@@ -160,10 +164,12 @@
     display: flex;
     justify-content: center;
 
+
     &--empty,
     &--checked {
       opacity: 0;
       margin-right: 7px;
+      
     }
 
     input[type="checkbox"] {
