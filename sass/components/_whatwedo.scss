@@ -1,13 +1,11 @@
 @use "./../utils/vars" as *;
 .whatwedo {
-  //display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background: $white;
   padding: 0;
   margin: 0;
-
-  display: none;
 
   &__container {
     display: flex;
@@ -21,9 +19,9 @@
   &__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.166;
-    padding: 64px 0 0px 0;
-  }
+    line-height: 1.11;
+    padding: 96px 0 72px 0;
+    margin: 0;
 
   &__header {
     display: flex;
@@ -59,4 +57,5 @@
       color: $white;
     }
   }
+}
 }
