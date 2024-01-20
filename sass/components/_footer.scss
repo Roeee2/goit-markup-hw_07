@@ -8,11 +8,39 @@
 
 .footer {
   gap: 72px 24px;
-  max-width: 584px;
   justify-content: left;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    max-width: 768px;
+    flex-wrap: wrap;
+    gap: 0;
+
+    column-gap: 24px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+
+  gap: 72px 24px;
+  justify-content: left;
+  wrap: nowrap;
+  max-width: 100%;  
+  justify-content: center;
+
+  }
 
   &__part1 {
     margin: 0 auto 72px auto;
+
+    @include tablet {
+      margin: 0 0 0 50px;
+    }
+
+    @include desktop {
+      margin: auto 120px auto 156px;
+    }
 
     &--link {
 
@@ -27,6 +55,11 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $iris;
+
+      @include tablet {
+        text-align: left;
+        margin: 0 0 16px 0;
+      }
     }
 
     &--linkspan {
@@ -34,14 +67,13 @@
     }
 
     &--motto {
-      max-width: 264px;
+      width: 264px;
       margin: 0 auto;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: 0.32px;
       color: $cloud;
-    
     }
   }  
 
@@ -58,6 +90,11 @@
             margin: 97.5px 0 0 24px;
             padding: 0;
             align-items: start;
+            margin: 0;
+          }
+
+          @include desktop {
+            margin: 0 80px auto 0;
           }
       
           a {
@@ -79,7 +116,6 @@
             color: $white;
             margin: 0;
             padding: 0 0 16px 0;
-            
           }
       
           ul {
@@ -111,391 +147,134 @@
             fill: $iris;
           }
         }
-      }
-        .footer-sub {
-    background-color: $navy;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    flex-basis: 100%;
-  
-    @include tablet {
-      max-width: 768px;
-      flex-direction: row;
-      justify-content: start;
-    }
-  
-    @include desktop {
-      max-width: 1600px;
-      flex-direction: row;
-    }
 
-  &__layout {
-    padding: 0 0 104px 0;
+        &__part3 {
+          display: flex;
+          flex-direction: column;
 
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-    }
-  }
+          @include tablet {
+            margin: 72px auto 0 50px;
+          }
 
-  &__newsletter {
-    position: relative;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 398px;
+          @include desktop {
+            margin: 0 159px 0 0; 
+          }
 
-    @include tablet {
-      margin: 0 0 0 144px;
-      text-align: left;
-    }
+          &--layout {
+            padding: 0;
+            margin: 0;
+        
+            @include tablet {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+          }
+        
+          &--newsletter {
+            position: relative;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 398px;
+            text-align: center;
+        
+            @include tablet {
+              margin: 0 0 0 0;
+              text-align: left;
+            }
+        
+            &--newsletter-box {
+              background-color: $navy;
+              border-radius: 4px;
+              box-sizing: border-box;
+              border: 1px solid $sub-button-border;
+        
+              width: 92vw;
+              max-width: 398px;
+              height: 40px;
+              flex-shrink: 0;
+              padding: 0 0 0 16px;
+              margin: 0 0 16px 0;
+              color: $cloud;
+        
+              @include tablet {
+                max-width: 264px;
+              }
+        
+              @include desktop {
+                max-width: 264px;
+              }
+            }
+        
+            &--newsletter-box::placeholder {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 2;
+              letter-spacing: 0.48px;
+              color: $sub-placeholder;
+            }
+        
+            &--subscribe {
+              border-radius: 4px;
+              background: $iris;
+              width: 165px;
+              height: 40px;
+              flex-shrink: 0;
+              color: $white;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.64px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition-property: color, box-shadow, text-shadow;
+              transition: $standard;
+              margin: 0 auto;
+              padding: 0;
+              border: none;
+        
+              @include tablet {
+                margin: 40px 0 0 24px;
+                
+              }
 
-    &--newsletter-box {
-      background-color: $navy;
-      border-radius: 4px;
-      box-sizing: border-box;
-      border: 1px solid $sub-button-border;
+              @include desktop {
+                margin: 24px 0 0 24px;
+              }
+            }
+        
+            &--subscribe:hover,
+            &--subscribe:focus {
+              text-shadow: 1px 1px 1px $black;
+              box-shadow: inset -5px -5px 10px $modal-shadow;
+              box-shadow: inset 5px 5px 10px $box-shadow;
+            }
+        
+            &--send-icon {
+              margin-left: 16px;
+              fill: $white;
+            }
+        
+            h2 {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.32px;
+              color: $white;
+              margin: 8px 0;
 
-      width: 92vw;
-      max-width: 398px;
-      height: 40px;
-      flex-shrink: 0;
-      padding: 0 0 0 16px;
-      margin: 0 0 16px 0;
-      color: $cloud;
-
-      @include tablet {
-        max-width: 264px;
-      }
-
-      @include desktop {
-        max-width: 264px;
-      }
-    }
-
-    &--newsletter-box::placeholder {
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 2;
-      letter-spacing: 0.48px;
-      color: $sub-placeholder;
-    }
-
-    &--subscribe {
-      border-radius: 4px;
-      background: $iris;
-      width: 165px;
-      height: 40px;
-      flex-shrink: 0;
-      color: $white;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: 0.64px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition-property: color, box-shadow, text-shadow;
-      transition: $standard;
-      margin: 0 auto;
-      padding: 0;
-      border: none;
-
-      @include tablet {
-        margin: 40px 0 0 24px;
-      }
-    }
-
-    &--subscribe:hover,
-    &--subscribe:focus {
-      text-shadow: 1px 1px 1px $black;
-      box-shadow: inset -5px -5px 10px $modal-shadow;
-      box-shadow: inset 5px 5px 10px $box-shadow;
-    }
-
-    &--send-icon {
-      margin-left: 16px;
-      fill: $white;
-    }
-
-    h2 {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.5;
-      letter-spacing: 0.32px;
-      color: $white;
-      margin: 8px 0;
-    }
-  }
+              @include desktop {
+                margin: 0;
+              }
+            }
+          }
+        
         }
-
-  
-  
-  
-  
-// .footer-container {
-//   background-color: $navy;
-//   padding: 0;
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-//   justify-content: center;
-//   flex-basis: 100%;
-
-//   @include tablet {
-//     max-width: 768px;
-//     flex-direction: row;
-//     margin: 0;
-//     text-align: left;
-//   }
-
-//   @include desktop {
-//     max-width: 1600px;
-//     flex-direction: row;
-//   }
-
-//   &__logo {
-//     padding: 97.5px 0 17.5px 0;
-//     max-width: 264px;
-//     margin: 0 auto;
-
-//     @include tablet {
-//       margin: 97.5px 0 0 0;
-//       padding: 0;
-//       text-align: left;
-//     }
-
-//     h2 {
-//       margin: 0;
-//       padding: 0;
-
-//       @include logo-font;
-//     }
-
-//     &--logo-web {
-//       color: $iris;
-//     }
-
-//     &--logo-studio {
-//       color: $white;
-//     }
-//   }
-
-//   &__slogan {
-//     margin: 0 auto;
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 1.5;
-//     letter-spacing: 0.32px;
-//     color: $cloud;
-//     max-width: 268px;
-//     padding: 17.5px 0 72px 0;
-//     text-align: start;
-
-//     @include tablet {
-//       max-width: 264px;
-//     }
-
-//     @include desktop {
-//       max-width: 264px;
-//     }
-//   }
-
-//   &__socials {
-//     display: flex;
-//     flex-direction: column;
-//     padding: 0 0 72px 0;
-//     align-items: center;
-//     max-width: 208px;
-//     margin: 0 auto;
-
-//     @include tablet {
-//       margin: 97.5px 0 0 24px;
-//       padding: 0;
-//       align-items: start;
-//     }
-
-//     a {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       fill: $cloud;
-//     }
-
-//     h2 {
-//       font-size: 16px;
-//       font-weight: 500;
-//       line-height: 1.5;
-//       letter-spacing: 0.32px;
-//       color: $white;
-//       margin: 0;
-//       padding: 0 0 16px 0;
+      }
       
-//     }
-
-//     ul {
-//       list-style: none;
-//       display: flex;
-//       gap: 10px;
-//       margin: 0;
-//       padding: 0;
-//       --color1: $white;
-//     }
-
-//     li {
-//       position: relative;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       box-sizing: border-box;
-//       height: 40px;
-//       width: 40px;
-//       background-color: $iris;
-//       border-radius: 50%;
-//       transition-property: background-color, fill;
-//       transition: $standard;
-//     }
-
-//     li:hover,
-//     li:focus {
-//       background-color: $cloud;
-//       fill: $iris;
-//     }
-//   }
-// }
-
-//   .footer-sub {
-//     background-color: $navy;
-//     padding: 0;
-//     display: flex;
-//     flex-direction: column;
-//     text-align: center;
-//     justify-content: center;
-//     flex-basis: 100%;
-  
-//     @include tablet {
-//       max-width: 768px;
-//       flex-direction: row;
-//       justify-content: start;
-//     }
-  
-//     @include desktop {
-//       max-width: 1600px;
-//       flex-direction: row;
-//     }
-
-//   &__layout {
-//     padding: 0 0 104px 0;
-
-//     @include tablet {
-//       display: flex;
-//       flex-direction: row;
-//     }
-//   }
-
-//   &__newsletter {
-//     position: relative;
-//     list-style: none;
-//     display: flex;
-//     flex-direction: column;
-//     padding: 0;
-//     margin: 0 auto;
-//     max-width: 398px;
-
-//     @include tablet {
-//       margin: 0 0 0 144px;
-//       text-align: left;
-//     }
-
-//     &--newsletter-box {
-//       background-color: $navy;
-//       border-radius: 4px;
-//       box-sizing: border-box;
-//       border: 1px solid $sub-button-border;
-
-//       width: 92vw;
-//       max-width: 398px;
-//       height: 40px;
-//       flex-shrink: 0;
-//       padding: 0 0 0 16px;
-//       margin: 0 0 16px 0;
-//       color: $cloud;
-
-//       @include tablet {
-//         max-width: 264px;
-//       }
-
-//       @include desktop {
-//         max-width: 264px;
-//       }
-//     }
-
-//     &--newsletter-box::placeholder {
-//       font-size: 12px;
-//       font-style: normal;
-//       font-weight: 400;
-//       line-height: 2;
-//       letter-spacing: 0.48px;
-//       color: $sub-placeholder;
-//     }
-
-//     &--subscribe {
-//       border-radius: 4px;
-//       background: $iris;
-//       width: 165px;
-//       height: 40px;
-//       flex-shrink: 0;
-//       color: $white;
-//       font-size: 16px;
-//       font-weight: 500;
-//       line-height: 1.5;
-//       letter-spacing: 0.64px;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       transition-property: color, box-shadow, text-shadow;
-//       transition: $standard;
-//       margin: 0 auto;
-//       padding: 0;
-//       border: none;
-
-//       @include tablet {
-//         margin: 40px 0 0 24px;
-//       }
-//     }
-
-//     &--subscribe:hover,
-//     &--subscribe:focus {
-//       text-shadow: 1px 1px 1px $black;
-//       box-shadow: inset -5px -5px 10px $modal-shadow;
-//       box-shadow: inset 5px 5px 10px $box-shadow;
-//     }
-
-//     &--send-icon {
-//       margin-left: 16px;
-//       fill: $white;
-//     }
-
-//     h2 {
-//       font-size: 16px;
-//       font-weight: 500;
-//       line-height: 1.5;
-//       letter-spacing: 0.32px;
-//       color: $white;
-//       margin: 8px 0;
-//     }
-//   }
-//
-//
-//
 

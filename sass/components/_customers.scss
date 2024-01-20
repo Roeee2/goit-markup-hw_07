@@ -17,6 +17,10 @@
     row-gap: 72px;
     column-gap: 24px;
     max-width: 768px;
+
+    @include desktop {
+      max-width: 1158px;
+    }
     
   &--item {
     display: flex;
@@ -33,6 +37,12 @@
     @include tablet {
       flex-basis: calc((100% - 120px) / 3);
       width: calc((100% - 120px) / 6);
+    }
+
+    @include desktop {
+      flex-basis: calc((100% - 120px) / 6);
+      width: 168px;
+
     }
 
   }
