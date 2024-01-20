@@ -29,7 +29,7 @@
     }
 
     &--logo-web {
-      color: $web-studio-blue;
+      color: $iris;
     }
 
     &--logo-studio {
@@ -45,37 +45,14 @@
     letter-spacing: 0.32px;
     color: $cloud;
     max-width: 268px;
-
-    &--ways-of-contact {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      border: solid 1px red;
-    }
-
-    span {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.714;
-      color: $white6alpha;
-      transition-property: color;
-      transition-duration: $standard;
-      border: solid 1px royalblue;
-    }
-
-    li {
-      margin-bottom: 9px;
-    }
+    padding: 0 0 72px 0;
   }
 
   &__socials {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    align-items: flex-start;
-    text-transform: uppercase;
-
-    border: solid 1px green;
+    padding: 0 0 72px 0;
+    align-items: center;
 
     a {
       display: flex;
@@ -85,15 +62,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      fill: $white;
+      fill: $cloud;
     }
 
     h2 {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.42px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.32px;
       color: $white;
-      margin-bottom: 20px;
+      margin: 0;
+      padding: 0 0 16px 0;
     }
 
     ul {
@@ -111,9 +90,9 @@
       justify-content: center;
       align-items: center;
       box-sizing: border-box;
-      height: 44px;
-      width: 44px;
-      background-color: $footer-socials-bg;
+      height: 40px;
+      width: 40px;
+      background-color: $iris;
       border-radius: 50%;
       transition-property: background-color, fill;
       transition: $standard;
@@ -121,10 +100,8 @@
 
     li:hover,
     li:focus {
-      background-color: $web-studio-blue;
-      fill: $white;
-      transition-property: background-color, fill;
-      transition: $standard;
+      background-color: $cloud;
+      fill: $iris;
     }
   }
 
@@ -133,67 +110,71 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: flex-start;
-    text-transform: uppercase;
-    --color1: $white;
-
-    border: solid 1px rebeccapurple;
+    padding: 0 0 104px 0;
+    margin: 0 auto;
 
     &--newsletter-box {
-      background-color: $h1-background;
+      background-color: $navy;
       border-radius: 4px;
       box-sizing: border-box;
       border: 1px solid $sub-button-border;
       box-shadow: 0px 4px 4px 0px $light-shadow;
-      width: 358px;
-      height: 50px;
+      width: 398px;
+      height: 40px;
       flex-shrink: 0;
       padding: 0 0 0 16px;
-      margin-right: 12px;
+      margin: 0 0 16px 0;
+    }
+
+    &--newsletter-box::placeholder {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: 0.48px;
+      color: $sub-placeholder;
     }
 
     &--subscribe {
-      border: 1px solid $sub-button-border;
       border-radius: 4px;
-      box-sizing: border-box;
-      background: $web-studio-blue;
-      box-shadow: $modal-shadow2;
-      width: 200px;
-      height: 50px;
+      background: $iris;
+      width: 165px;
+      height: 40px;
       flex-shrink: 0;
       color: $white;
       font-size: 16px;
-      line-height: 1.875;
-      letter-spacing: 0.96px;
-      position: relative;
-      text-align: start;
-      padding-left: 42px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       transition-property: color, box-shadow, text-shadow;
       transition: $standard;
+      margin: 0 auto;
+      padding: 0;
+      border: none;
     }
+
     &--subscribe:hover,
     &--subscribe:focus {
-      transition-property: color, box-shadow, text-shadow;
-      transition: $standard;
       text-shadow: 1px 1px 1px $black;
       box-shadow: inset -5px -5px 10px $modal-shadow;
       box-shadow: inset 5px 5px 10px $box-shadow;
     }
+
     &--send-icon {
-      position: absolute;
-      top: 13px;
-      right: 28px;
-      left: 148px;
+      margin-left: 16px;
       fill: $white;
     }
+
     h2 {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.42px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.32px;
       color: $white;
-      margin-bottom: 20px;
+      margin: 8px 0;
     }
   }
 }
