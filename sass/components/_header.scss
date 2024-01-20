@@ -20,6 +20,21 @@
     height: 72px;
   }
 
+  nav {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      margin-right: auto;
+    }
+
+    @include desktop {
+      display: flex;
+      padding: 0 0 0 93px;
+      margin-right: auto;
+    }
+  }
+
   &__logo {
     display: flex;
     align-items: center;
@@ -75,6 +90,142 @@
       fill: $iris;
     }
   }
+
+
+  &__nav-spacing {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 72px;
+  }
+
+  h2 {
+    @include logo-font;
+  }
+
+
+
+  ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+  }
+
+  &__nav-item {
+    justify-content: center;
+    color: $navy;
+    transition-property: color;
+    transition: $standard;
+  }
+
+  &__nav-item:hover,
+  &__nav-item:focus {
+    color: $ocean;
+  }
+
+  &__nav-item-active {
+    color: $ocean;
+    transition-property: color;
+    transition: $standard;
+  }
+
+  &__nav-item::after {
+    content: "";
+    justify-content: center;
+    height: 4px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    border-radius: 2px;
+    transform: translateY(23px);
+    transition-property: background-color;
+    transition: $standard;
+  }
+
+  &__nav-item-active::after {
+    content: "";
+    justify-content: center;
+    height: 4px;
+    width: 100%;
+    background-color: $ocean;
+    display: flex;
+    border-radius: 2px;
+    transform: translateY(23px);
+    transition-property: background-color;
+    transition: $standard;
+  }
+
+  &__nav-item:hover::after,
+  &__nav-item:focus::after {
+    content: "";
+    justify-content: center;
+    height: 4px;
+    width: 100%;
+    background-color: $ocean;
+    display: flex;
+    border-radius: 2px;
+    transform: translateY(23px);
+  }
+
+  &__contact-spacing {
+    display: none;
+    padding: 5px 15px 5px 0;
+
+    @include tablet {
+      padding: 21px 15px 21px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: flex-end;
+    }
+
+    @include desktop {
+      padding: 0 0 0 0;
+      display: flex;
+      flex-direction: row;
+      align-content: right;
+      gap: 30px;
+    }
+
+    &--box {
+      align-items: center;
+
+    }
+
+    svg {
+      vertical-align: middle;
+      fill: $navy;
+      transition-property: fill;
+      transition: $standard;
+    }
+
+    a {
+      color: $navy;
+      transition-property: color;
+      transition: $standard;
+    }
+
+    a:hover svg,
+    a:focus svg {
+      fill: $ocean;
+    }
+
+    a:hover,
+    a:focus {
+      color: $ocean;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
+
 
 
