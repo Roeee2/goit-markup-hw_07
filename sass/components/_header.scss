@@ -9,7 +9,6 @@
 .head {
   background: var(--white);
   box-sizing: border-box;
-  justify-content: space-between;
   height: 70px;
 
   @include tablet {
@@ -95,7 +94,7 @@
   &__nav-spacing {
     display: flex;
     justify-content: flex-start;
-    padding: 0 0 0 72px;
+    margin: 0 0 0 72px;
   }
 
   h2 {
