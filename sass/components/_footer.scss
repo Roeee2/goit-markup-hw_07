@@ -154,12 +154,21 @@
       flex-direction: row;
     }
 
+  &__layout {
+    padding: 0 0 104px 0;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
   &__newsletter {
     position: relative;
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 0 0 104px 0;
+    padding: 0;
     margin: 0 auto;
     max-width: 398px;
 
@@ -219,6 +228,10 @@
       margin: 0 auto;
       padding: 0;
       border: none;
+
+      @include tablet {
+        margin: 40px 0 0 24px;
+      }
     }
 
     &--subscribe:hover,
