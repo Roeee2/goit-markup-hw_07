@@ -1,26 +1,18 @@
 @use "./../utils/vars" as *;
 @use "./../utils/mixins" as *;
-.footer-bg {
-  background-color: $h1-background;
-}
+
 .footer-container {
-  max-width: 480px;
-  margin-inline: auto;
-  //display: flex;
+  background-color: $navy;
+  padding: 0;
+  display: flex;
   flex-direction: row;
 
-  display: none;
-
-  @include tablet {
-    max-width: 768px;
-  }
-
-  @include desktop {
-    max-width: 1600px;
-  }
+  border: solid 1px red;
 
   &__logo {
     padding: 60px 0 0 0;
+
+    border: solid 1px green;
 
     &--logo-web {
       color: $web-studio-blue;
@@ -40,6 +32,8 @@
     padding-left: 215px;
     padding-bottom: 60px;
     letter-spacing: 0.03em;
+
+    border: solid 1px blue;
 
     &--ways-of-contact {
       list-style-type: none;
