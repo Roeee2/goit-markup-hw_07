@@ -174,8 +174,7 @@
 
   &__contact-spacing {
     display: none;
-    padding: 5px 15px 5px 0;
-
+    
     @include tablet {
       padding: 21px 15px 21px 0;
       display: flex;
@@ -194,7 +193,6 @@
 
     &--box {
       align-items: center;
-
     }
 
     svg {

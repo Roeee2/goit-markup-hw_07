@@ -10,6 +10,8 @@
   justify-content: center;
   flex-basis: 100%;
 
+  border: solid 1px red;
+
   @include tablet {
     max-width: 768px;
     flex-direction: row;
@@ -143,6 +145,8 @@
     text-align: center;
     justify-content: center;
     flex-basis: 100%;
+
+    border: solid 1px yellowgreen;
   
     @include tablet {
       max-width: 768px;
