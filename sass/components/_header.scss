@@ -7,7 +7,7 @@
 }
 
 .head {
-  background: var(--white);
+  background: $white;
   box-sizing: border-box;
   height: 70px;
 
@@ -58,6 +58,7 @@
     align-items: center;
     width: 32px;
     height: 22px;
+    padding: 0 0 0 249px;
 
     @include tablet {
       display: none;
@@ -89,7 +90,6 @@
       fill: $iris;
     }
   }
-
 
   &__nav-spacing {
     display: flex;
