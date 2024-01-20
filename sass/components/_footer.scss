@@ -58,6 +58,7 @@
     color: $cloud;
     max-width: 268px;
     padding: 17.5px 0 72px 0;
+    text-align: start;
 
     @include tablet {
       max-width: 264px;
@@ -183,7 +184,7 @@
       border-radius: 4px;
       box-sizing: border-box;
       border: 1px solid $sub-button-border;
-      box-shadow: 0px 4px 4px 0px $light-shadow;
+
       width: 92vw;
       max-width: 398px;
       height: 40px;
