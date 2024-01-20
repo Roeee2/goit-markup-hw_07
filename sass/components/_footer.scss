@@ -8,18 +8,29 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  flex-basis: 100%;
 
   @include tablet {
     max-width: 768px;
+    flex-direction: row;
+    margin: 0;
   }
 
   @include desktop {
     max-width: 1600px;
+    flex-direction: row;
   }
 
   &__logo {
     padding: 97.5px 0 17.5px 0;
-    
+    max-width: 264px;
+    margin: 0 auto;
+
+    @include tablet {
+      margin: 97.5px 0 0 0;
+      padding: 0;
+      text-align: left;
+    }
 
     h2 {
       margin: 0;
@@ -46,7 +57,7 @@
     color: $cloud;
     max-width: 268px;
     padding: 0 0 72px 0;
-    
+
     @include tablet {
       max-width: 264px;
     }
@@ -61,6 +72,14 @@
     flex-direction: column;
     padding: 0 0 72px 0;
     align-items: center;
+    max-width: 208px;
+    margin: 0 auto;
+
+    @include tablet {
+      margin: 97.5px 0 0 24px;
+      padding: 0;
+      align-items: start;
+    }
 
     a {
       display: flex;
@@ -81,6 +100,7 @@
       color: $white;
       margin: 0;
       padding: 0 0 16px 0;
+      
     }
 
     ul {
@@ -112,6 +132,27 @@
       fill: $iris;
     }
   }
+}
+
+  .footer-sub {
+    background-color: $navy;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 100%;
+  
+    @include tablet {
+      max-width: 768px;
+      flex-direction: row;
+      justify-content: start;
+    }
+  
+    @include desktop {
+      max-width: 1600px;
+      flex-direction: row;
+    }
 
   &__newsletter {
     position: relative;
@@ -120,6 +161,12 @@
     flex-direction: column;
     padding: 0 0 104px 0;
     margin: 0 auto;
+    max-width: 398px;
+
+    @include tablet {
+      margin: 0 0 0 144px;
+      text-align: left;
+    }
 
     &--newsletter-box {
       background-color: $navy;
@@ -133,6 +180,7 @@
       flex-shrink: 0;
       padding: 0 0 0 16px;
       margin: 0 0 16px 0;
+      color: $cloud;
 
       @include tablet {
         max-width: 264px;
