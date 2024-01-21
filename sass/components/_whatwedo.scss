@@ -8,6 +8,8 @@
     display: block;
     background-color: $white;
     margin-bottom: 120px;
+    text-align: center;
+
 
     &__title {
       font-size: 36px;
@@ -22,11 +24,13 @@
     &__list {
       display: flex;
       justify-content: center;
-      gap: 24px;
       background-color: $white;
+      margin: 0;
+      gap: 24px;
 
       &--element {
-        width: calc((100% - 48px) / 3);
+        max-width: 100%;
+        height: auto;
       }
     }
   }

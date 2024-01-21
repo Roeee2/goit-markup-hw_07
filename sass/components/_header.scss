@@ -37,10 +37,10 @@
   &__logo {
     display: flex;
     align-items: center;
-    padding: 0 16px;
+    padding: 0;
 
     @include desktop {
-      margin: 0 0 0 156px;
+      margin: 0 156px 0 156px;
     }
 
     &--whole {
@@ -143,7 +143,7 @@
     background-color: transparent;
     display: flex;
     border-radius: 2px;
-    transform: translateY(23px);
+    transform: translateY(4px);
     transition-property: background-color;
     transition: $standard;
   }
@@ -156,7 +156,7 @@
     background-color: $ocean;
     display: flex;
     border-radius: 2px;
-    transform: translateY(23px);
+    transform: translateY(4px);
     transition-property: background-color;
     transition: $standard;
   }
@@ -170,14 +170,14 @@
     background-color: $ocean;
     display: flex;
     border-radius: 2px;
-    transform: translateY(23px);
+    transform: translateY(4px);
   }
 
   &__contact-spacing {
     display: none;
     
     @include tablet {
-      padding: 21px 15px 21px 0;
+      padding: 21px 16px 21px 0;
       display: flex;
       flex-direction: column;
       gap: 5px;

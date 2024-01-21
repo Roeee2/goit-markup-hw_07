@@ -1,6 +1,10 @@
 @use "./../utils/vars" as *;
 @use "./../utils/mixins" as *;
 
+.team-bg {
+  background-color: $cloud;
+}
+
 .team-header {
   display: flex;
   flex-wrap: wrap;
@@ -30,13 +34,21 @@
   gap: 24px;
   background: $cloud;
   padding-bottom: 96px;
+  
+  @include tablet {
+    margin: 0 auto;
+    max-width: 758px;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    max-width: none;
+  }
 
   figure {
     margin: 0;
     box-shadow: $team-figure;
     border-radius: 0px 0px 4px 4px;
-
-    
   }
 
   &__member-header,
