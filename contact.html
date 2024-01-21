@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./css/main.min.css" rel="stylesheet" type="text/css" />
-    <title>Zadanie domowe - WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.min.css">
+    <link href="./css/main.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="header-box">
-      <div class="header-box__header-container">
-        <section>
-          <a href="https://roeee2.github.io/goit-markup-hw-08/"
-            ><h2>
-              <span class="header-box__header-container--logo-web">Web</span
-              ><span class="header-box__header-container--logo-studio"
-                >Studio</span
-              >
-            </h2></a
-          >
-        </section>
-        <nav>
-          <section class="header-box__header-container--nav-spacing">
-            <h3>
-              <ul>
-                <li>
-                  <a
-                    class="header-box__header-container--nav-item"
-                    href="./index.html"
-                    >Agencja</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="header-box__header-container--nav-item"
-                    href="./portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="header-box__header-container--nav-item-active"
-                    href="./contact.html"
-                    >Kontakt</a
-                  >
-                </li>
-              </ul>
-            </h3>
+    <header class="head border">
+      <div class="container">
+        
+        <div class="head head__logo">
+          <h2 class="head__logo--whole">
+          <a href="https://roeee2.github.io/goit-markup-hw_07/">
+              <span class="head__logo--web">web</span><span>studio</span>
+          </a>
+        </h2>
+          <div class="head__burger">
+            <button
+              class="head__burger--menu js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+              <svg class="head__burger--icon" width="32px" height="22px">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <section class="head__nav-spacing">
+                <ul>
+                  <li>
+                    <a
+                      class="head__nav-item"
+                      href="./index.html">
+                      <h3>Studio</h3></a>
+                  </li>
+                  <li>
+                    <a class="head__nav-item" href="./portfolio.html">
+                      <h3>Portfolio</h3></a>
+                  </li>
+                  <li>
+                    <a class="head__nav-item-active" href="./contact.html">
+                      <h3>Contacts</h3></a>
+                  </li>
+                </ul>
+            
+            </section>
+          </nav>
+          <section class="head__contact-spacing">
+            <div class="head__contact-spacing--box">
+              <a href="mailto:info@devstudio.com">
+                <svg class="envelope" width="24px" height="18px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+            <div class="head__contact-spacing--box">
+              <a href="tel:+48111111111">
+                <svg class="smartphone" width="20px" height="32px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +11 (000) 111-11-11
+              </a>
+            </div>
           </section>
-        </nav>
-        <section class="header-box__header-container--contact-spacing">
-          <h4>
-            <a href="mailto:info@devstudio.com">
-              <svg class="envelope" width="24px" height="18px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-            <a href="tel:+48111111111">
-              <svg class="smartphone" width="20px" height="32px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
-          </h4>
-        </section>
+        </div>
       </div>
     </header>
 
@@ -79,108 +81,280 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer-bg">
-      <div class="footer-container">
-        <section id="contact">
-          <div class="footer-container__logo">
-            <a href="https://roeee2.github.io/goit-markup-hw-08/"
-              ><h2>
-                <span class="footer-container__logo--logo-web">Web</span
-                ><span class="footer-container__logo--logo-studio">Studio</span>
-              </h2></a
-            >
-          </div>
-          <div class="footer-container__address">
-            <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-            <ul class="footer-container__address--ways-of-contact">
+    <footer class="foot">
+      <div class="footer">
+        <div class="footer__part1">
+          <a href="./index.html" class="footer__part1--link">
+            Web<span class="footer__part1--linkspan">Studio</span>
+          </a>
+          <p class="footer__part1--motto">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer__part2">
+            <h2>Social media</h2>
+            <ul>
               <li>
-                <span
-                  ><a href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  ></span
-                >
-              </li>
-              <li>
-                <span><a href="tel:+48111111111">+48 111 111 111</a></span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer-container__socials">
-          <h2>Dołącz do Nas</h2>
-          <ul>
-            <li>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer">
-                <svg width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <ul class="footer-container__newsletter">
-            <li>
-              <h2>Zapisz się do newslettera</h2>
-            </li>
-            <li>
-              <form name="signup" autocomplete="on" novalidate>
-                <label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="footer-container__newsletter--newsletter-box"
-                    placeholder="E-mail" />
-                </label>
-                <button
-                  type="submit"
-                  class="footer-container__newsletter--subscribe">
-                  Zapisz się
-                  <svg
-                    class="footer-container__newsletter--send-icon"
-                    width="24px"
-                    height="24px">
-                    <use href="./images/icons.svg#icon-send"></use>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
-                </button>
-              </form>
-            </li>
-          </ul>
-        </section>
-      </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              </ul>
+          </div>
+          <div class="footer__part3">
+            <section class="footer__part3--layout">
+              <div class="footer__part3--layout--email">
+                <ul class="footer__part3--newsletter">
+                  <li>
+                    <h2>Subscribe</h2>
+                  </li>
+                  <li>
+                    <form name="signup" autocomplete="on" novalidate>
+                    <label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="footer__part3--newsletter--newsletter-box"
+                      placeholder="E-mail">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__part3--layout--send">
+                  <button
+                    type="submit"
+                    class="footer__part3--newsletter--subscribe">
+                    Subscribe
+                    <svg
+                      class="footer__part3--newsletter--send-icon"
+                      width="22px"
+                      height="22px">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+            </div>
+          </div>
+        </div>
     </footer>
+
+    <!-- mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__burger js-close-menu">
+        <svg width="24px" height="24px">
+          <use class="menu-container__ellipse2" href="./images/icons.svg#icon-ellipse2"></use>
+          <use class="menu-container__ellipse" href="./images/icons.svg#icon-ellipse"></use>
+          <use class="menu-container__close" href="./images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-container__nav">
+        <li><a href="" class="menu-container__nav--link">Studio</a></li>
+        <li><a href="" class="menu-container__nav--link">Portfolio</a></li>
+        <li><a href="" class="menu-container__nav--link">Contacts</a></li>
+      </ul>
+
+      <div class="menu_container__contact">
+        <p class="menu-container__phone">
+          <a href="tel:+11000111111111">+11 (000) 111-11-11</a>
+        </p>
+        <p class="menu-container__mail">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </p>
+        <ul class="menu-container__socials">
+          <li>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="menu-container__socials--circle" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-socials-ellipse"></use>
+              </svg>
+              <svg class="menu-container__socials--icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="menu-container__socials--circle" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-socials-ellipse"></use>
+              </svg>
+              <svg class="menu-container__socials--icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="menu-container__socials--circle" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-socials-ellipse"></use>
+              </svg>
+              <svg class="menu-container__socials--icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg class="menu-container__socials--circle" width="40px" height="40px">
+                <use href="./images/icons.svg#icon-socials-ellipse"></use>
+              </svg>
+              <svg class="menu-container__socials--icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-ellipse2"></use>
+            <use href="./images/icons.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+
+        <div class="contact">
+          <h2>Leave your contacts and we will call you back</h2>
+          <form name="contact-form" autocomplete="on" novalidate>
+            <label class="contact__field-header">
+              Name
+            </label>
+              <div class="contact__field">
+                <input
+                  type="text"
+                  name="contact-name"
+                  class="contact__field--box">
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+
+            <label class="contact__field-header">
+              Phone
+            </label>
+              <div class="contact__field">
+                <input
+                  type="text"
+                  name="contact-phone"
+                  class="contact__field--box">
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            <label class="contact__field-header">
+              Email
+            </label>
+              <div class="contact__field">
+                <input
+                  type="email"
+                  name="contact-email"
+                  class="contact__field--box">
+                <svg width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            <label class="contact__field-header">
+              Comment
+            </label>
+              <div class="contact__field">
+                <textarea
+                  class="contact__comment"
+                  name="comment"
+                  rows="5"
+                  placeholder="Text input"></textarea>
+              </div>
+            <div class="contact__checkbox-container">
+              <input type="checkbox" id="checkbox1" name="contact-checkbox">
+              <label for="checkbox1" class="contact__declaration-label">
+                <span class="contact__empty-box">
+                  <svg
+                    width="16px"
+                    height="15px"
+                    class="contact__checkbox-container--empty">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+                <span class="contact__box-checked">
+                  <svg
+                    width="16px"
+                    height="15px"
+                    class="contact__checkbox-container--checked">
+                    <use href="./images/icons.svg#icon-checkbox-blue"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the 
+                <a class="contact__declaration-link" href="#">Privacy Policy</a>
+              </label>
+            </div>
+
+            <div class="contact__send-button">
+              <button type="submit" class="contact__contact-button">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
