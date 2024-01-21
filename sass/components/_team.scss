@@ -22,6 +22,10 @@
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+
+    @include desktop {
+      padding: 120px 0 72px 0;
+    }
   }
 
 }
@@ -33,7 +37,7 @@
   text-align: center;
   gap: 24px;
   background: $cloud;
-  padding-bottom: 120px;
+  padding-bottom: 96px;
   
   @include tablet {
     margin: 0 auto;
@@ -43,6 +47,7 @@
   @include desktop {
     margin: 0 auto;
     max-width: none;
+    padding-bottom: 120px;
   }
 
   figure {
