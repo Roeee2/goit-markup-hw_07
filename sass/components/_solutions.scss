@@ -44,7 +44,11 @@
       max-width: 320px;
 
       @media screen and (max-width: 320px) {
-        font-size: 22px;
+        font-size: 32px;
+      }
+
+      @media screen and (max-width: 286px) {
+        font-size: 26px;
       }
 
       @include tablet {
