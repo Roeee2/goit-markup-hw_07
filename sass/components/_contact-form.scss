@@ -6,6 +6,10 @@
   height: 100%;
   padding: 72px 16px 24px 16px;
 
+  @media screen and (max-width: 400px) {
+    width: 280px;
+  }
+
   h2 {
     font-size: 16px;
     letter-spacing: 0.32px;
@@ -14,6 +18,11 @@
     text-align: center;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+      padding: 0 15px;
+    }
   }
 
   a {
@@ -31,7 +40,7 @@
 
   svg:hover,
   svg:focus {
-    fill: $web-studio-blue;
+    fill: $iris;
     transition-property: fill;
     transition: $standard;
   }
@@ -46,11 +55,21 @@
     color: $text-color;
     padding: 0;
     margin: 10px 0 4px 0;
+
+    @media screen and (max-width: 400px) {
+      display: flex;
+      margin-left: 35px;
+    }
   }
 
   &__field {
     position: relative;
     display: inline-block;
+
+    @media screen and (max-width: 400px) {
+      display: flex;
+      justify-content: center;
+    }
 
     &--box {
       width: 360px;
@@ -63,6 +82,10 @@
       outline: none;
       transition-property: border;
       transition: $standard;
+
+      @media screen and (max-width: 400px) {
+        width: 180px;
+      }
     }
 
     &--box:hover,
@@ -81,6 +104,10 @@
     letter-spacing: 0.42px;
     top: 50%;
     left: 24px;
+
+    @media screen and (max-width: 400px) {
+      margin: 0 14px 0 18%;
+    }
   }
 
   &__declaration-link {
@@ -150,6 +177,12 @@
     text-align: start;
     resize: none;
     outline: none;
+
+    @media screen and (max-width: 400px) {
+      display: flex;
+      justify-content: center;
+      width: 180px;
+    }
   }
 
   &__comment:hover,
@@ -193,5 +226,11 @@
     left: 4px;
     bottom: 124px;
     position: absolute;
+
+    @media screen and (max-width: 400px) {
+      bottom: 156px;
+      left: 0;
+      margin: 0 auto 0 5%;
+    }
   }
 }

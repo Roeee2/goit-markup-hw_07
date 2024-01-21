@@ -3,20 +3,25 @@
 @use "./../utils/globals" as *;
 
 .border {
-  box-shadow: $hdsd1, $hdsd2, $hdsd3;
+  box-shadow: $hdsd1, none, $hdsd3;
 }
 
 .head {
   background: $white;
   box-sizing: border-box;
   height: 70px;
+  padding: 0 8px;
 
   @include tablet {
     height: 72px;
+    padding: 0 16px;
   }
 
   @include desktop {
     height: 72px;
+    margin: 0 auto;
+    max-width: 1158px;  
+    padding: 0 16px;
   }
 
   nav {
@@ -40,7 +45,7 @@
     padding: 0;
 
     @include desktop {
-      margin: 0 156px 0 156px;
+      margin: 0 auto;
     }
 
     &--whole {

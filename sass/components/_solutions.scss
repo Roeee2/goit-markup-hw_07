@@ -34,16 +34,24 @@
     text-align: center;
 
     &--title {
-      font-weight: 700;
       font-size: 36px;
+      font-weight: 700;
       line-height: 1.11;
       letter-spacing: 0.72px;
       display: flex;
       flex-direction: column;
-      padding: 0 0 72px 0;
+      padding: 0;
+      max-width: 320px;
 
       @media screen and (max-width: 320px) {
         font-size: 22px;
+      }
+
+      @include tablet {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+        max-width: 496px;
       }
     }
 
@@ -73,14 +81,6 @@
       letter-spacing: 0.64px;
       color: $white;
     }
-
-    span {
-      white-space: nowrap;
-    }
-
-    span:first-child {
-      margin-bottom: 6px;
-    }
   }
 }
 
@@ -99,7 +99,8 @@
   gap: 72px;
   justify-content: center;
   background: $white;
-  padding: 96px 0;
+  padding: 0;
+  margin: 120px 0;
 
   @include tablet {
     display: flex;
@@ -119,7 +120,7 @@
   }
 
   &__example-container {
-    width: 396px;
+    width: 90%;
 
     @include tablet {
       width: 356px;

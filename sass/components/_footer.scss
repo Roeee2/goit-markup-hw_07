@@ -22,13 +22,11 @@
   }
 
   @include desktop {
-
-  gap: 72px 24px;
-  justify-content: left;
+  display: flex;
+  justify-content: space-between;
   wrap: nowrap;
-  max-width: 100%;  
-  justify-content: center;
-
+  max-width: 1158px;  
+  padding: 0 16px;
   }
 
   &__part1 {
@@ -39,7 +37,7 @@
     }
 
     @include desktop {
-      margin: auto 120px auto 156px;
+      margin: 0;
     }
 
     &--link {
@@ -94,7 +92,7 @@
           }
 
           @include desktop {
-            margin: 0 80px auto 0;
+            margin: 0;
           }
       
           a {
@@ -156,7 +154,8 @@
           }
 
           @include desktop {
-            margin: 0 159px 0 0; 
+            margin: 0; 
+            ;
           }
 
           &--layout {
